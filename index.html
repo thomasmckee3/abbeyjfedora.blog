@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbey's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Abbey's Blog</h1>
+        <p>Contact: <a href="mailto:abbeyjfedora@gmail.com">abbeyjfedora@gmail.com</a></p>
+    </header>
+
+    <main id="blog-posts">
+        <!-- Blog posts will be dynamically added here -->
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const posts = [
+                { title: "Second Post", date: "April 02, 2025", content: "I wonder what I will waffle about today?" },
+                { title: "First Post", date: "April 01, 2025", content: "Welcome to my blog!" }
+            ];
+
+            const blogContainer = document.getElementById("blog-posts");
+            
+            posts.forEach(post => {
+                const postElement = document.createElement("article");
+                postElement.innerHTML = `
+                    <h2>${post.title}</h2>
+                    <p class="date">${post.date}</p>
+                    <p>${post.content}</p>
+                    <hr>
+                `;
+                blogContainer.appendChild(postElement);
+            });
+        });
+    </script>
+</body>
+</html>

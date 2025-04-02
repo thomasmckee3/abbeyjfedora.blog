@@ -1,0 +1,43 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4e2cd;
+    color: #4A1C1C;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #6f2b24;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+header a {
+    color: #FFDAB9;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+article {
+    text-align: left;
+    padding: 10px;
+}
+
+h2 {
+    color: #7B2D26;
+}
+
+.date {
+    font-style: italic;
+    color: #A0522D;
+}
